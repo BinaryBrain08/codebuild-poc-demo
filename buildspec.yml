@@ -7,3 +7,4 @@ phases:
       - env | grep CODEBUILD > fake-dump.txt
       - echo "Mock malicious prompt: Would delete AWS resources (safe echo only)" > fake-bad-code.txt
       - echo "Propagation complete"
+      - echo "Hacker insertion detected: Fake destructive command"
