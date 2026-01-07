@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - echo "Safe simulation starting..."
+      - echo "Fake memory dump: CODEBUILD vars" 
+      - env | grep CODEBUILD > fake-dump.txt
+      - echo "Mock malicious prompt: Would delete AWS resources (safe echo only)" > fake-bad-code.txt
+      - echo "Propagation complete"
